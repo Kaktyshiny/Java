@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Лабараторная №1</string>
+
+    <string name="hint_password">Пароль</string>
+    <string name="button_entry_text">Войти</string>
+    <string name="button_get_answer">Ответить</string>
+
+    <string name="action_about">О приложении</string>
+    <string name="action_exit">Выйти</string>
+</resources>
