@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                                    Log.d("MainActivity", "onNext => " + response);
                                    try{
                                        if(response.getData().getResults().size() > 0){
-                                           for (int i = 0; i < 10; i++) {
+                                           for (int i = 0; i < 20; i++) {
                                                String name = response.getData().getResults().get(i).getName();
                                                Image image =  response.getData().getResults().get(i).getThumbnail();
                                                String description = response.getData().getResults().get(i).getDescription();

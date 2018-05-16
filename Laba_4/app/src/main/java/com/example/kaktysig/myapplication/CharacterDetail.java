@@ -37,6 +37,8 @@ public class CharacterDetail  extends AppCompatActivity {
     ImageView characterImage;
     @BindView(R.id.characterName)
     TextView characterName;
+    @BindView(R.id.characterDescription)
+    TextView characterDescription;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -78,7 +80,9 @@ public class CharacterDetail  extends AppCompatActivity {
                                                String imagePath = response.getData().getResults().get(0).getThumbnail().getPath()+ "/standard_xlarge" + ".";
                                                String imageExtension =  response.getData().getResults().get(0).getThumbnail().getExtension();
                                                String imageUrl = imagePath + imageExtension;
+                                               String description = response.getData().getResults().get(0).getDescription();
                                                Picasso.get().load(imageUrl).into(characterImage);
+                                               characterDescription.setText(response.getData().getResults().get(0).getDescription());
 
                                    }catch (NullPointerException e){
                                        Log.e("MainActivity", "NullPointerException  => " + e.getMessage());
