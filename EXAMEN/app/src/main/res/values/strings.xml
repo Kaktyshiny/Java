@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EXAM</string>
+    <string name="login_hint">Введите пароль, чтобы продолжить</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="menu_comics">Комиксы</string>
+    <string name="menu_heroes">Герои</string>
+    <string name="menu_favorites">Любимые</string>
+
+    <string name="action_about">О приложении</string>
+    <string name="action_exit">Выйти</string>
+</resources>
